@@ -1,0 +1,82 @@
+import java.util.Scanner;
+public class n1
+{
+    public static void main(String args[]){
+    
+        Scanner teclado = new Scanner(System.in);
+        double n1,n2,n3,maiorn,meion,menorn;
+        int opcao;
+        System.out.println("Informe o primeiro valor: ");
+        n1 = teclado.nextDouble();
+        System.out.println("Informe o segundo valor: ");
+        n2 = teclado.nextDouble();
+        System.out.println("Informe o terceiro valor: ");
+        n3 = teclado.nextDouble();
+        System.out.println("Informe a opção(1 para ordem crescente, 2 para ordem decrescente e 3 para maior no meio): ");
+        opcao = teclado.nextInt();
+        maiorn = 0;
+        meion = 0;
+        menorn = 0;
+        
+        
+        if(n1>=n2 && n1>=n3){
+            maiorn = n1;
+         if(n2>=n3){
+                meion = n2;
+                menorn = n3;
+            
+            
+            
+            
+        }
+        if(n3>n2){
+            meion = n3;
+            menorn = n2;
+    
+        
+        
+        
+        
+
+}
+}
+if(n2>=n1 && n2>=n3){
+    maiorn = n2;
+    if(n1>=n3){
+        meion = n1;
+        menorn = n3;
+
+   }
+if(n3>n1){
+    meion = n3;
+    menorn = n1;
+}
+}
+if(n3>=n1 && n3>=n2){
+ maiorn = n3;
+ if(n1>=n2){
+     meion = n1;
+     menorn = n2;
+ }
+ if(n2>n1){
+     meion = n2;
+     menorn = n1;
+ }
+    
+}
+if(n1==n2 && n1==n3){
+    maiorn= n1;
+    meion = n2;
+    menorn = n3;
+}
+if(opcao<1 || opcao>3)System.out.printf("Numero inválido, terminando programa.");
+else if(opcao == 1)System.out.printf("Ordem crescente: %f , %f e %f\n", menorn , meion , maiorn);
+else if(opcao == 2)System.out.printf("Ordem decrescente: %f , %f e %f\n"  ,maiorn  ,meion  ,menorn);
+else System.out.printf("Maior no meio: %f , %f e %f\n"  ,menorn  ,maiorn  ,meion);
+
+
+
+
+
+}
+}
